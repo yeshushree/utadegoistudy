@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html>
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
 <style>
+
+.navbar {
+  overflow: hidden;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  padding: 5px
+  
+}
 .tooltip {
   position: relative;
   border-radius: 8px;
@@ -11,12 +25,15 @@
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
+  width: 220px;
+  font-size:4vw;
+  background-color: #fff2ed;
+  color: black;
   text-align: center;
   border-radius: 6px;
-  padding: 10px;
+  padding: 5px 0;
+  left: calc(50%);
+
 
   /* Position the tooltip */
   position: absolute;
@@ -27,121 +44,784 @@
   visibility: visible;
 }
 
+@media only screen and (min-width: 768px) {
+
+.tooltip {
+  position: relative;
+  border-radius: 8px;
+  background: #e0ecff;
+  box-shadow: 1px 1px #888888;
+
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  font-size:1.5vw;
+  background-color: #fff2ed;
+  color: black;
+  text-align: left;
+  border-radius: 6px;
+  padding: 5px 0;
+  left: calc(50%);
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+   } 
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+   }
+.audiocontrol {
+  width: 600px;
+}
+}
+a:link, a:visited {
+  background-color: #e0ecff;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: #fff2ed;
+}
 </style>
 <body style="text-align:center;">
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CoVXDq2dPkk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br/><br/><br/>
+<div class="navbar">
+<br/>
+<h3>Audio: Tsukiakari</h3><br>
+<audio controls class="audiocontrol">
+  <source src="Rie Fu - tsukiakari mp3.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+</div>
 
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<h1>Current Song [1/3]: Tsukiakari by Rie Fu</h1>
+<h2 style="color:grey">Next Song: Suteki na shiawase <a href="sutekina.html"><span class="material-icons" style="color:black">
+skip_next
+</span></a></h2>
+
+<div>
 <span class="tooltip">
 <ruby>青<rp>(</rp><rt>あお</rt><rp>)</rp></ruby>い
-<span class="tooltiptext"><p> I-adjective<br>1. blue <br>Eg: Naze sora wa aoi ka shitte iru no? Do you know why the sky is blue?</p>
+<span class="tooltiptext"><p> 
+i-adjective</br>
+Meaning: blue</br>
+Example: Sora wa aoi desu. The sky is blue.<br>
+</p>
 </span>
 </span>
-<ruby>青<rp>(</rp><rt>あお</rt><rp>)</rp></ruby>い　<ruby>空<rp>(</rp><rt>そら</rt><rp>)</rp></ruby>に　<ruby>月<rp>(</rp><rt>つき</rt><rp>)</rp></ruby>の<ruby>光<rp>(</rp><rt>ひかり</rt><rp>)</rp></ruby>をともす<br/>
+<span class="tooltip">
+<ruby>青<rp>(</rp><rt>あお</rt><rp>)</rp></ruby>い
+<span class="tooltiptext"><p> 
+i-adjective</br>
+Meaning: blue</br>
+Example: Sora wa aoi desu. The sky is blue.<br>
+</p>
+</span>
+</span>
+<span class="tooltip">
+<ruby>空<rp>(</rp><rt>そら</rt><rp>)</rp></ruby>
+<span class="tooltiptext"><p> 
+Noun</br>
+Meaning: sky; the air; the heavens</br>
+Example: Sora wa aoi desu. The sky is blue.<br>
+</p>
+</span>
+</span>
+に　<span class="tooltip">
+<ruby>月<rp>(</rp><rt>つき</rt><rp>)</rp></ruby>
+<span class="tooltiptext"><p> 
+Noun</br>
+Meaning: moon; month</br>
+Example: Tsuki wa kirei desu. The moon is beautiful.<br>
+</p>
+</span>
+</span>
+の<span class="tooltip">
+<ruby>光<rp>(</rp><rt>ひかり</rt><rp>)</rp></ruby>
+<span class="tooltiptext"><p> 
+Noun<br>
+Meaning: light; illumination; ray; beam<br>
+Example: Hoshi no hikari wa mabushii desu. The light of the stars is bright.<br>
+</p>
+</span>
+</span>
+を<span class="tooltip">
+ともす<span class="tooltiptext"><p> 
+Godan verb with su ending, Transitive verb<br>
+Meaning: to light (a candle, lamp, etc.); to turn on (a light)<br>
+Example: Rousoku wo tomosu. Light a candle.<br>
+</p>
+</span>
+</span><br/>
 aoi aoi sora ni tsuki no hikari wo tomosu <br/>
 In the blue, blue sky, I turn on the moon's light <br/> <br/>
 
-<ruby>甘<rp>(</rp><rt>あま</rt><rp>)</rp></ruby>く　<ruby>淡<rp>(</rp><rt>あわ</rt><rp>)</rp></ruby>く　<ruby>重<rp>(</rp><rt>おも</rt><rp>)</rp></ruby>い　そんなものに<ruby>捉<rp>(</rp><rt>とら</rt><rp>)</rp></ruby>われて　<br/>
+<span class="tooltip" style="background-color:#80ffaf">
+<ruby>甘<rp>(</rp><rt>あま</rt><rp>)</rp></ruby>く　
+<span class="tooltiptext"><p> 
+no-adjective</br>
+Meaning: sweet</br>
+Example: Kono chokoreto wa totemo amakute oishii desu. This chocolate is very sweet and delicious.<br>
+</p>
+</span>
+</span>
+<span class="tooltip" style="background-color:#80ffaf">
+<ruby>淡<rp>(</rp><rt>あわ</rt><rp>)</rp></ruby>く　
+<span class="tooltiptext"><p> 
+no-adjective</br>
+Meaning: faint; light; pale</br>
+Example: Kono shatsu no iro wa awakute, me ni wa karui desu. The color of this shirt is pale and is light on the eyes.<br>
+</p>
+</span>
+</span>
+<span class="tooltip">
+<ruby>重<rp>(</rp><rt>おも</rt><rp>)</rp></ruby>い　
+<span class="tooltiptext"><p> 
+i-adjective</br>
+Meaning: heavy(feeling); heavy(weight)</br>
+Example: Kono isu wa omoi desu. This chair is heavy.</br>
+</p>
+</span>
+</span>
+そんなものに
+<span class="tooltip">
+<ruby>捉<rp>(</rp><rt>とら</rt><rp>)</rp></ruby>われて　
+<span class="tooltiptext"><p> 
+Ichidan verb</br>
+Meaning: to capture</br>
+Example: Tora ga torawarete shimatta. The tiger has been caught.<br>
+</p>
+</span>
+</span>
+<br/>
 amaku awaku omoi sonna mono ni torawarete <br/> 
 Sweetly, faintly heavy--captured by things like that <br/><br/><br/><br/>
 
-この<ruby>月明<rp>(</rp><rt>つきあかり</rt><rp>)</rp></ruby>かりの<ruby>下<rp>(</rp><rt>した</rt><rp>)</rp></ruby>　ひとり<ruby>知<rp>(</rp><rt>し</rt><rp>)</rp></ruby>れず<br/>
-kono tsukiakari no shita hitori shirazu <br/>
+この
+<span class="tooltip">
+<ruby>月明<rp>(</rp><rt>つきあかり</rt><rp>)</rp></ruby>
+<span class="tooltiptext"><p> 
+Noun<br>
+Meaning: Moonlight<br>
+Example: Konya no tsukiakari wa mabushii desu. The moonlight is bright tonight.<br>
+</p>
+</span>
+</span>
+の
+<span class="tooltip">
+<ruby>下<rp>(</rp><rt>した</rt><rp>)</rp></ruby>　
+<span class="tooltiptext"><p> 
+Noun</br>
+Meaning: below; down; under; younger</br>
+Example: Isu no shita ni hako ga arimasu. There is a box under the chair.<br>
+</p>
+</span>
+</span>
+ひとり<span class="tooltip">
+<ruby>知<rp>(</rp><rt>し</rt><rp>)</rp></ruby>れず<br/>
+<span class="tooltiptext"><p> 
+Ichidan verb, Opposite of 知れる<br>
+Meaning: without knowing; unaware<br>
+Example: Nanimo shirezu ni hanasanaide kudasai. Please do not talk without knowing anything.
+</p>
+</span>
+</span>
+kono tsukiakari no shita hitori shirezu <br/>
 Without knowing I'm alone underneath this moonlight <br/><br/>
 
-君の名前だけを呼んでいた<br/>
+<span class="tooltip">
+<ruby>君<rp>(</rp><rt>きみ</rt><rp>)</rp></ruby>
+<span class="tooltiptext"><p> 
+Pronoun<br>
+Meaning: you<br>
+Example: Kimi no namae wa nandesu ka? What is your name?<br>
+</p>
+</span>
+</span>
+の
+<span class="tooltip">
+<ruby>名前<rp>(</rp><rt>なまえ</rt><rp>)</rp></ruby>
+<span class="tooltiptext"><p> 
+Noun<br>
+Meaning: name<br>
+Example: Kimi no namae wa nandesu ka? What is your name?<br>
+</p>
+</span>
+</span>
+だけを
+<span class="tooltip" style="background-color:#80ffaf">
+<ruby>呼<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>んでいた<br/>
+<span class="tooltiptext"><p> 
+Past continuous tense of 呼ぶ<br>
+Godan verb<br>
+Meaning: to call<br>
+Example: Kimi no namae wo yondeita. I was calling out your name.<br>
+</p>
+</span>
+</span>
 kimi no namae dake wo yondeita <br/>
 I called out only your name <br/><br/>
 
-いつまでも未来をさがしてた<br/>
+<span class="tooltip">
+いつまでも
+<span class="tooltiptext"><p> 
+Adverb<br>
+Meaning: forever; for good; eternally;<br>
+Example: Watashi wa itsumademo kare no tomodachi desu. I am forever his friend.<br>
+</p>
+</span>
+</span>
+<span class="tooltip" style="background-color:#80ffaf">
+<ruby>未来<rp>(</rp><rt>みらい</rt><rp>)</rp></ruby>
+<span class="tooltiptext"><p> 
+Noun<br>
+Meaning: the future (usually distant)<br>
+Example: Mirai wa tooi desu. The future is far away.<br>
+</p>
+</span>
+</span>
+を
+<span class="tooltip">
+さがしてた
+<span class="tooltiptext"><p> 
+Past continuous tense of 探す<br>
+Godan verb<br>
+Meaning: to search for; to look for; to hunt for; to seek<br>
+Example: Kanojo wa kaban wo sagashiteta. She was searching for the bag.<br>
+</p>
+</span>
+</span><br/>
 itsumademo mirai wo sagashiteta <br/>
 I've been searching for the future forever <br/><br/>
 
-この<ruby>光<rp>(</rp><rt>ひかり</rt><rp>)</rp></ruby>の<ruby>中<rp>(</rp><rt>なか</rt><rp>)</rp></ruby>に…<br/>
+この<span class="tooltip">
+<ruby>光<rp>(</rp><rt>ひかり</rt><rp>)</rp></ruby>
+<span class="tooltiptext"><p> 
+Noun<br>
+Meaning: light; illumination; ray; beam<br>
+Example: Hoshi no hikari wa mabushii desu. The light of the stars is bright.<br>
+</p>
+</span>
+</span>
+の
+<span class="tooltip">
+<ruby>中<rp>(</rp><rt>なか</rt><rp>)</rp></ruby>
+<span class="tooltiptext"><p> 
+Noun<br>
+Meaning: inside; within<br>
+Example: Inu wa ie no naka desu. The dog is inside the house.<br>
+</p>
+</span>
+</span>
+に…<br/>
 kono hikari no naka ni... <br/>
 Inside this light... <br/><br/><br/><br/>
 
 
-いつも　いつも　そばで　<ruby>信<rp>(</rp><rt>しん</rt><rp>)</rp></ruby>じてゆく<ruby>力<rp>(</rp><rt>ちから</rt><rp>)</rp></ruby>が<br/>
-itsumo itsumo soba de shinjiteyuku chikara ga <br/>
+いつも　いつも　そばで　
+<span class="tooltip" style="background-color:#80ffaf">
+<ruby>信<rp>(</rp><rt>しん</rt><rp>)</rp></ruby>じて
+<span class="tooltiptext"><p> 
+te form of 信じる<br>
+Godan verb<br>
+Meaning: to believe; to believe in; to place trust in; to confide in; to have faith in<br>
+Example: Watashi ni shinjite! Believe in me!<br>
+</p>
+</span>
+</span>
+ゆく
+<span class="tooltip" style="background-color:#80ffaf">
+<ruby>力<rp>(</rp><rt>ちから</rt><rp>)</rp></ruby>
+<span class="tooltiptext"><p> 
+Noun<br>
+Meaning: force; strength; might<br>
+Example: Daitouryou wa sugoi chikara wo motte imasu. The president has tremendous power.<br>
+</p>
+</span>
+</span>
+が<br/>
+itsumo itsumo soba de shinjite yuku chikara ga <br/>
 I've got a feeling that fragile things are being moved far off <br/><br/>
 
-<ruby>遠<rp>(</rp><rt>とお</rt><rp>)</rp></ruby>く　<ruby>脆<rp>(</rp><rt>もろ</rt><rp>)</rp></ruby>い　ものを　<ruby>動<rp>(</rp><rt>うご</rt><rp>)</rp></ruby>かしてる<ruby>気<rp>(</rp><rt>き</rt><rp>)</rp></ruby>がしてた<br/>
+<span class="tooltip">
+<ruby>遠<rp>(</rp><rt>とお</rt><rp>)</rp></ruby>く　
+<span class="tooltiptext"><p> 
+no-adjective<br>
+Meaning: far away; distant; at a distance<br>
+Example: Tooku ni fujisan ga mieru. Mt. Fuji can be seen in the distance.<br>
+</p>
+</span>
+</span>
+<span class="tooltip">
+<ruby>脆<rp>(</rp><rt>もろ</rt><rp>)</rp></ruby>い　
+<span class="tooltiptext"><p> 
+i-adjective<br>
+Meaning: brittle; fragile; weak; frail<br>
+Example: Sono katana wa moroi desu. That sword is fragile.<br>
+</p>
+</span>
+</span>
+ものを　
+<span class="tooltip" style="background-color:#80ffaf">
+<ruby>動<rp>(</rp><rt>うご</rt><rp>)</rp></ruby>かしてる
+<span class="tooltiptext"><p> 
+te form of 動かす<br>
+Godan verb<br>
+Meaning: to stir (eg: feelings);to move; to shift<br>
+Example: Watashitachi wa enjin o ugokashiteru. We are running the engine.<br>
+</p>
+</span>
+</span>
+<span class="tooltip">
+<ruby>気<rp>(</rp><rt>き</rt><rp>)</rp></ruby>がしてた
+<span class="tooltiptext"><p> 
+te form of 気がする<br>
+Expresssion<br>
+Meaning: to feel (as if); to have a feeling (that); to have a hunch (that); to get a sense (that)<br>
+Example: Nanika tabetai youna ki ga shiteta. I felt like eating something.<br>
+</p>
+</span>
+</span>
+<br/>
 tooku moroi mono wo ugokashiteru ki ga shiteta <br/>
 By the power of always, always believing you'll be near me <br/><br/><br/><br/>
 
 
-この<ruby>月明<rp>(</rp><rt>つきあかり</rt><rp>)</rp></ruby>かりの<ruby>下<rp>(</rp><rt>した</rt><rp>)</rp></ruby>　ひとり<ruby>知<rp>(</rp><rt>し</rt><rp>)</rp></ruby>れず<br/>
-kono tsukiakari no shita hitori shirazu <br/>
+この
+<span class="tooltip">
+<ruby>月明<rp>(</rp><rt>つきあかり</rt><rp>)</rp></ruby>
+<span class="tooltiptext"><p> 
+Noun<br>
+Meaning: Moonlight<br>
+Example: Konya no tsukiakari wa mabushii desu. The moonlight is bright tonight.<br>
+</p>
+</span>
+</span>
+の
+<span class="tooltip">
+<ruby>下<rp>(</rp><rt>した</rt><rp>)</rp></ruby>　
+<span class="tooltiptext"><p> 
+Noun</br>
+Meaning: below; down; under; younger</br>
+Example: Isu no shita ni hako ga arimasu. There is a box under the chair.<br>
+</p>
+</span>
+</span>
+ひとり<span class="tooltip">
+<ruby>知<rp>(</rp><rt>し</rt><rp>)</rp></ruby>れず<br/>
+<span class="tooltiptext"><p> 
+Ichidan verb, Opposite of 知れる<br>
+Meaning: without knowing; unaware<br>
+Example: Nanimo shirezu ni hanasanaide kudasai. Please do not talk without knowing anything.<vr>
+</p>
+</span>
+</span>
+kono tsukiakari no shita hitori shirezu <br/>
 Without knowing I'm alone underneath this moonlight <br/><br/>
 
-<ruby>君<rp>(</rp><rt>きみ</rt><rp>)</rp></ruby>の<ruby>名前<rp>(</rp><rt>なまえ</rt><rp>)</rp></ruby>だけを<ruby>呼<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>んでいた<br/>
+<span class="tooltip">
+<ruby>君<rp>(</rp><rt>きみ</rt><rp>)</rp></ruby>
+<span class="tooltiptext"><p> 
+Pronoun<br>
+Meaning: you<br>
+Example: Kimi no namae wa nandesu ka? What is your name?<br>
+</p>
+</span>
+</span>
+の
+<span class="tooltip">
+<ruby>名前<rp>(</rp><rt>なまえ</rt><rp>)</rp></ruby>
+<span class="tooltiptext"><p> 
+Noun<br>
+Meaning: name<br>
+Example: Kimi no namae wa nandesu ka? What is your name?<br>
+</p>
+</span>
+</span>
+だけを
+<span class="tooltip" style="background-color:#80ffaf">
+<ruby>呼<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>んでいた<br/>
+<span class="tooltiptext"><p> 
+Past continuous tense of 呼ぶ<br>
+Godan verb<br>
+Meaning: to call<br>
+Example: Kimi no namae wo yondeita. I was calling out your name.<br>
+</p>
+</span>
+</span>
 kimi no namae dake wo yondeita <br/>
 I called out only your name <br/><br/>
 
-<ruby>静<rp>(</rp><rt>しず</rt><rp>)</rp></ruby>かな<ruby>愛情<rp>(</rp><rt>あいじょう</rt><rp>)</rp></ruby>を<ruby>信<rp>(</rp><rt>しん</rt><rp>)</rp></ruby>じてた<br/>
+<span class="tooltip" style="background-color:#80ffaf">
+<ruby>静<rp>(</rp><rt>しず</rt><rp>)</rp></ruby>か
+<span class="tooltiptext"><p> 
+na-adjective<br>
+Meaning: quiet; silent; peaceful<br>
+Example: Shizukana machi desu. It is a quiet town.<br>
+</p>
+</span>
+</span>
+な
+<span class="tooltip">
+<ruby>愛情<rp>(</rp><rt>あいじょう</rt><rp>)</rp></ruby>
+<span class="tooltiptext"><p> 
+Noun<br>
+Meaning: love; affection<br>
+Example: Kare e no aijou wa fukamatta. My love for him deepened.<br>
+</p>
+</span>
+</span>
+を
+<span class="tooltip" style="background-color:#80ffaf">
+<ruby>信<rp>(</rp><rt>しん</rt><rp>)</rp></ruby>じてた
+<span class="tooltiptext"><p> 
+te form of 信じる. Past tense.<br>
+Godan verb<br>
+Meaning: to believe; to believe in; to place trust in; to confide in; to have faith in<br>
+Example: Watashi wa anata no koto wo shinjiteta. I believed in you.<br>
+</p>
+</span>
+</span>
+<br/>
 shizukana aijou wo shinjiteta <br/>
 I believed in quiet affection <br/><br/>
 
 
-この<ruby>光<rp>(</rp><rt>ひかり</rt><rp>)</rp></ruby>の<ruby>中<rp>(</rp><rt>なか</rt><rp>)</rp></ruby>に…<br/>
+この<span class="tooltip">
+<ruby>光<rp>(</rp><rt>ひかり</rt><rp>)</rp></ruby>
+<span class="tooltiptext"><p> 
+Noun<br>
+Meaning: light; illumination; ray; beam<br>
+Example: Hoshi no hikari wa mabushii desu. The light of the stars is bright.<br>
+</p>
+</span>
+</span>
+の
+<span class="tooltip">
+<ruby>中<rp>(</rp><rt>なか</rt><rp>)</rp></ruby>
+<span class="tooltiptext"><p> 
+Noun<br>
+Meaning: inside; within<br>
+Example: Inu wa ie no naka desu. The dog is inside the house.<br>
+</p>
+</span>
+</span>
+に…<br/>
 kono hikari no naka ni... <br/>
 Inside this light... <br/><br/><br/><br/>
 
-<ruby>何<rp>(</rp><rt>なに</rt><rp>)</rp></ruby>も<ruby>掴<rp>(</rp><rt>つか</rt><rp>)</rp></ruby>めないような<ruby>夜<rp>(</rp><rt>よる</rt><rp>)</rp></ruby>には
-nani mo tsukamenai you na yoru ni ha <br/>
+<span class="tooltip">
+<ruby>何<rp>(</rp><rt>なに</rt><rp>)</rp></ruby>も
+<span class="tooltiptext"><p> 
+Expression<br/>
+Meaning: (not) anything; (nothing) at all; (not) any; nothing<br/>
+Example: Yamada-san wa nanimo shimasen. Yamada-san does not do anything. <br/>
+</p>
+</span>
+</span>
+<span class="tooltip">
+<ruby>掴<rp>(</rp><rt>つか</rt><rp>)</rp></ruby>めない
+<span class="tooltiptext"><p> 
+Opposite of 掴む<br/>
+Godan verb<br/>
+Meaning: cannot catch; cannot seize; cannot understand; cannot grasp<br/>
+Example: Te ga nureteiru kara booru ga tsukamenai. I cannot catch the ball as my hands are wet. <br/>
+</p>
+</span>
+</span>
+ような<span class="tooltip">
+<ruby>夜<rp>(</rp><rt>よる</rt><rp>)</rp></ruby>
+<span class="tooltiptext"><p> 
+Noun<br/>
+Meaning: evening; night<br/>
+Example: Yoru ni wa minna nemasu. Everyone sleeps at night.<br/>
+</p>
+</span>
+</span>
+には<br/>
+nani mo tsukamenai you na yoru ni wa <br/>
 There's never a time when I don't think about you <br/><br/>
 
-<ruby>君<rp>(</rp><rt>きみ</rt><rp>)</rp></ruby>を<ruby>想<rp>(</rp><rt>おも</rt><rp>)</rp></ruby>わないときはない
+<span class="tooltip">
+<ruby>君<rp>(</rp><rt>きみ</rt><rp>)</rp></ruby>
+<span class="tooltiptext"><p> 
+Pronoun<br>
+Meaning: you<br>
+Example: Kimi no namae wa nandesu ka? What is your name?<br>
+</p>
+</span>
+</span>
+を<span class="tooltip">
+<ruby>想<rp>(</rp><rt>おも</rt><rp>)</rp></ruby>わない
+<span class="tooltiptext"><p> 
+Opposite of 想う<br/>
+Godan verb<br/>
+Meaning: to think; to consider; to believe; to reckon (想う has connotations of heart-felt)<br/>
+Example: Watashi no koto wa omowanai desu ka? Don't you think of me?<br/>
+</p>
+</span>
+</span>
+<span class="tooltip">
+とき<span class="tooltiptext"><p> 
+Noun<br/>
+Meaning: time; hour; moment; when (an action occurs)​<br/>
+Example: Gakkou ni iku toki ni yonde kudasai. Please call me when you are going to school.<br/>
+</p>
+</span>
+</span>
+はない<br/>
 kimi wo omowanai toki ha nai <br/>
 On nights where it's like I can't catch hold of anything <br/><br/>
 
 
 There isn't a day I don't think about it <br/><br/>
 
-<ruby>迷<rp>(</rp><rt>まよ</rt><rp>)</rp></ruby>う<ruby>心<rp>(</rp><rt>こころ</rt><rp>)</rp></ruby>が　<ruby>君<rp>(</rp><rt>くん</rt><rp>)</rp></ruby>に<ruby>届<rp>(</rp><rt>とど</rt><rp>)</rp></ruby>くように
+<span class="tooltip" style="background-color:#80ffaf">
+<ruby>迷<rp>(</rp><rt>まよ</rt><rp>)</rp></ruby>う
+<span class="tooltiptext"><p> 
+Godan verb<br/>
+Meaning: to lose one's way; to get lost<br/>
+Example: Mayou toki wa atama ga itai desu. I have a headache when I get lost.<br/>
+</p>
+</span>
+</span>
+<span class="tooltip">
+<ruby>心<rp>(</rp><rt>こころ</rt><rp>)</rp></ruby>
+<span class="tooltiptext"><p> 
+Noun<br/>
+Meaning: mind; heart; spirit<br/>
+Example: Kokoro o rirakkusu shite kudasai. Please relax your mind.<br/>
+</p>
+</span>
+</span>
+が　
+<span class="tooltip">
+<ruby>君<rp>(</rp><rt>きみ</rt><rp>)</rp></ruby>
+<span class="tooltiptext"><p> 
+Pronoun<br>
+Meaning: you<br>
+Example: Kimi no namae wa nandesu ka? What is your name?<br>
+</p>
+</span>
+</span>
+に<span class="tooltip" style="background-color:#80ffaf">
+<ruby>届<rp>(</rp><rt>とど</rt><rp>)</rp></ruby>く
+<span class="tooltiptext"><p> 
+Godan verb<p> 
+Meaning: to carry (of sound); to reach; to touch; to get to<p> 
+Example: Tegami ga todoku youni shite kudasai. Please make sure the letter reaches. <p> 
+</p>
+</span>
+</span>
+ように<br/>
 mayou kokoro ga kimi ni todoku you ni <br/>
 May my hesitating heart reach you <br/><br/><br/><br/>
 
-この<ruby>月明<rp>(</rp><rt>つきあ</rt><rp>)</rp></ruby>かりの<ruby>下<rp>(</rp><rt>した</rt><rp>)</rp></ruby>で　<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>の<ruby>名前<rp>(</rp><rt>なまえ</rt><rp>)</rp></ruby>を<ruby>呼<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>んで
+この<span class="tooltip">
+<ruby>月明<rp>(</rp><rt>つきあかり</rt><rp>)</rp></ruby>
+<span class="tooltiptext"><p> 
+Noun<br>
+Meaning: Moonlight<br>
+Example: Konya no tsukiakari wa mabushii desu. The moonlight is bright tonight.<br>
+</p>
+</span>
+</span>
+の<span class="tooltip">
+<ruby>下<rp>(</rp><rt>した</rt><rp>)</rp></ruby>　
+<span class="tooltiptext"><p> 
+Noun</br>
+Meaning: below; down; under; younger</br>
+Example: Isu no shita ni hako ga arimasu. There is a box under the chair.<br>
+</p>
+</span>
+</span>
+で<span class="tooltip">
+<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>
+<span class="tooltiptext"><p> 
+Pronoun</br>
+Meaning: I; me</br>
+Example: Watashi no namae wo yonde kudasai. Please call out my name.</br>
+</p>
+</span>
+</span>
+の<span class="tooltip">
+<ruby>名前<rp>(</rp><rt>なまえ</rt><rp>)</rp></ruby>
+<span class="tooltiptext"><p> 
+Noun<br>
+Meaning: name<br>
+Example: Kimi no namae wa nandesu ka? What is your name?<br>
+</p>
+</span>
+</span>
+を<span class="tooltip" style="background-color:#80ffaf">
+<ruby>呼<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>んで<br/>
+<span class="tooltiptext"><p> 
+Past tense of 呼ぶ<br>
+Godan verb<br>
+Meaning: to call<br>
+Example: Watashi no namae wo yonde kudasai. Please call out my name.<br>
+</p>
+</span>
+</span><br/>
 kono tsukiakari no shita de watashi no namae wo yonde <br/>
 Call out my name underneath this moonlight <br/><br/>
 
-たしかに<ruby>逢<rp>(</rp><rt>あ</rt><rp>)</rp></ruby>いにゆくよ　どこへでも
-tashika ni ainiyuku yo doko he demo <br/>
+<span class="tooltip">
+たしか
+<span class="tooltiptext"><p> 
+Adverb<br/>
+Meaning: surely; certainly<br/>
+Example: Kare wa tashika ni rippana hitoda to omou. I'm sure he is a wonderful person.<br/>
+</p>
+</span>
+</span>
+に
+<span class="tooltip">
+<ruby>逢<rp>(</rp><rt>あ</rt><rp>)</rp></ruby>い
+<span class="tooltiptext"><p> 
+Godan verb<br/>
+Meaning: to meet; to encounter; to see (逢う is often used for close friends, etc. and may be associated with drama or pathos)<br/>
+Example: Kimi ni aitai desu. I want to meet you.<br/>
+</p>
+</span>
+</span>
+にゆくよ　
+<span class="tooltip">
+どこへでも
+<span class="tooltiptext"><p> 
+Adverb<br/>
+Meaning: anywhere<br/>
+Example: Kodomo no koro, doko demo nemuru koto ga dekita. When I was a kid, I could sleep anywhere.<br/>
+</p>
+</span>
+</span><br/>
+tashika ni ainiyuku yo doko e demo <br/>
 I promise I'll go see you, no matter where <br/><br/>
 
-<ruby>君<rp>(</rp><rt>きみ</rt><rp>)</rp></ruby>のそばに
+<span class="tooltip">
+<ruby>君<rp>(</rp><rt>きみ</rt><rp>)</rp></ruby>
+<span class="tooltiptext"><p> 
+Pronoun<br>
+Meaning: you<br>
+Example: Kimi no namae wa nandesu ka? What is your name?<br>
+</p>
+</span>
+</span>のそばに<br/>
 kimi no soba ni <br/>
 To your side<br/> <br/>
 
-この<ruby>月明<rp>(</rp><rt>つきあ</rt><rp>)</rp></ruby>かり　<ruby>瞬<rp>(</rp><rt>まばた</rt><rp>)</rp></ruby>きひとつせず
+この<span class="tooltip">
+<ruby>月明<rp>(</rp><rt>つきあかり</rt><rp>)</rp></ruby>
+<span class="tooltiptext"><p> 
+Noun<br>
+Meaning: Moonlight<br>
+Example: Konya no tsukiakari wa mabushii desu. The moonlight is bright tonight.<br>
+</p>
+</span>
+</span>
+<span class="tooltip">
+<ruby>瞬<rp>(</rp><rt>まばた</rt><rp>)</rp></ruby>き
+<span class="tooltiptext"><p> 
+Noun<br/>
+Meaning: blink (of eyes); wink<br/>
+Example: Intanetto de wa mabataki shite iru uchi ni nise jouhou wo hirogeru. Disinformation spreads on the internet in the span of blinking your eyes.<br/>
+</p>
+</span>
+</span>
+ひとつせず<br/>
 kono tsukiakari matataki hitotsu sezu <br/>
 Without blinking once in this moonlight<br/><br/>
 
-<ruby>静<rp>(</rp><rt>しず</rt><rp>)</rp></ruby>かに<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>を<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>つめていた
+<span class="tooltip">
+<ruby>静<rp>(</rp><rt>しず</rt><rp>)</rp></ruby>か
+<span class="tooltiptext"><p> 
+na-adjective<br/>
+Meaning: quiet; silent; peaceful<br/>
+Example: Shizukana machi desu. It is a quiet town.<br/>
+</p>
+</span>
+</span>
+に<span class="tooltip">
+<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>
+<span class="tooltiptext"><p> 
+Pronoun<br/>
+Meaning: I; me<br/>
+Example: Watashi no namae wo yonde kudasai. Please call out my name.<br/>
+</p>
+</span>
+</span>
+を<span class="tooltip">
+<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>つめていた
+<span class="tooltiptext"><p> 
+te form of 見つめる<br/>
+Ichidan verb<br/>
+Meaning: to stare at; to gaze at; to look hard at; to watch intently; to fix one's eyes on<br/>
+Example: Watashi wa kimi dake ｗo mitsumeteita. I was watching only you.<br/>
+</p>
+</span>
+</span><br/>
 shizuka ni watashi wo mitsumeteita<br/>
 You quietly gazed at me<br/><br/>
 
-<ruby>君<rp>(</rp><rt>きみ</rt><rp>)</rp></ruby>と<ruby>未来<rp>(</rp><rt>みらい</rt><rp>)</rp></ruby>をさがしてた
+<span class="tooltip">
+<ruby>君<rp>(</rp><rt>きみ</rt><rp>)</rp></ruby>
+<span class="tooltiptext"><p> 
+Pronoun<br>
+Meaning: you<br>
+Example: Kimi no namae wa nandesu ka? What is your name?<br>
+</p>
+</span>
+</span>との
+<span class="tooltip" style="background-color:#80ffaf">
+<ruby>未来<rp>(</rp><rt>みらい</rt><rp>)</rp></ruby>
+<span class="tooltiptext"><p> 
+Noun<br>
+Meaning: the future (usually distant)<br>Example: Mirai wa tooi desu. The future is far away.<br>
+</p>
+</span>
+</span>を
+<span class="tooltip">
+さがしてた
+<span class="tooltiptext"><p> 
+Past continuous tense of 探す<br>
+Godan verb<br>
+Meaning: to search for; to look for; to hunt for; to seek<br>
+Example: Kanojo wa kaban wo sagashiteta. She was searching for the bag.<br>
+</p>
+</span>
+</span><br/>
 kimi to no mirai wo sagashiteta<br/>
 I've been searching for the future with you<br/><br/>
 
-この<ruby>光<rp>(</rp><rt>ひかり</rt><rp>)</rp></ruby>の<ruby>中<rp>(</rp><rt>なか</rt><rp>)</rp></ruby>に…
-kono hikari no naka ni...<br/>
-Inside this light...<br/><br/>
-
-
-<ruby>振り<rt>かんじ</rt></ruby><ruby>返る<rt>かんじ</rt></ruby><ruby>過去<rt>かんじ</rt></ruby>はない　この手　放した日から
-失うものはないと繰り返し言い聞かせてた
-
-<div class="tooltip">Hover over me
-  <span class="tooltiptext"><p><ruby>漢字<rt>かんじ</rt></ruby>
- to lose one's way; to get lost</p></span>
+この<span class="tooltip">
+<ruby>光<rp>(</rp><rt>ひかり</rt><rp>)</rp></ruby>
+<span class="tooltiptext"><p> 
+Noun<br>
+Meaning: light; illumination; ray; beam<br>
+Example: Hoshi no hikari wa mabushii desu. The light of the stars is bright.<br>
+</p>
+</span>
+</span>
+の
+<span class="tooltip">
+<ruby>中<rp>(</rp><rt>なか</rt><rp>)</rp></ruby>
+<span class="tooltiptext"><p> 
+Noun<br>
+Meaning: inside; within<br>
+Example: Inu wa ie no naka desu. The dog is inside the house.<br>
+</p>
+</span>
+</span>
+に…<br/>
+kono hikari no naka ni... <br/>
+Inside this light... <br/><br/><br/><br/>
 </div>
-
-<p>Note that the position of the tooltip text isn't very good. Go back to the tutorial and continue reading on how to position the tooltip in a desirable way.</p>
-
 </body>
 </html>
