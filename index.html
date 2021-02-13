@@ -2,9 +2,8 @@
 <html>
 <head>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-</head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <style>
-
 .navbar {
   overflow: hidden;
   background-color: white;
@@ -15,6 +14,8 @@
   padding: 5px
   
 }
+@media only screen and (min-width: 300px) {
+
 .tooltip {
   position: relative;
   border-radius: 8px;
@@ -25,11 +26,11 @@
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 220px;
+  width: 200px;
   font-size:4vw;
   background-color: #fff2ed;
   color: black;
-  text-align: center;
+  text-align: left;
   border-radius: 6px;
   padding: 5px 0;
   left: calc(50%);
@@ -43,7 +44,10 @@
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
-
+.audiocontrol {
+  width: 250px;
+}
+}
 @media only screen and (min-width: 768px) {
 
 .tooltip {
@@ -57,7 +61,7 @@
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 300px;
-  font-size:1.5vw;
+  font-size:2vw;
   background-color: #fff2ed;
   color: black;
   text-align: left;
@@ -89,6 +93,7 @@ a:hover, a:active {
   background-color: #fff2ed;
 }
 </style>
+</head>
 <body style="text-align:center;">
 
 <div class="navbar">
@@ -100,7 +105,7 @@ a:hover, a:active {
 </audio>
 </div>
 
-<br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 <h1>Current Song [1/3]: Tsukiakari by Rie Fu</h1>
 <h2 style="color:grey">Next Song: Suteki na shiawase <a href="sutekina.html"><span class="material-icons" style="color:black">
 skip_next
