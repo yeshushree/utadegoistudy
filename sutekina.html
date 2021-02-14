@@ -2,9 +2,8 @@
 <html>
 <head>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-</head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <style>
-
 .navbar {
   overflow: hidden;
   background-color: white;
@@ -15,6 +14,8 @@
   padding: 5px
   
 }
+@media only screen and (min-width: 200px) {
+
 .tooltip {
   position: relative;
   border-radius: 8px;
@@ -25,11 +26,11 @@
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 220px;
+  width: 200px;
   font-size:4vw;
   background-color: #fff2ed;
   color: black;
-  text-align: center;
+  text-align: left;
   border-radius: 6px;
   padding: 5px 0;
   left: calc(50%);
@@ -43,7 +44,14 @@
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+.audiocontrol {
+  width: 300px;
 
+}
+.bodyaligh{
+}
+
+}
 @media only screen and (min-width: 768px) {
 
 .tooltip {
@@ -57,7 +65,7 @@
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 300px;
-  font-size:1.5vw;
+  font-size:2vw;
   background-color: #fff2ed;
   color: black;
   text-align: left;
@@ -79,17 +87,19 @@
 a:link, a:visited {
   background-color: #e0ecff;
   color: white;
-  padding: 14px 25px;
+  padding: 8px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  box-shadow: 1px 1px #888888;
 }
 
 a:hover, a:active {
   background-color: #fff2ed;
 }
 </style>
-<body style="text-align:center;">
+</head>
+<body style="text-align:left;">
 
 <div class="navbar">
 <br/>
@@ -102,12 +112,12 @@ a:hover, a:active {
 
 <br/><br/><br/><br/><br/><br/><br/><br/>
 <h1>Current Song [2/3]: Suteki na shiawase by The Stand Up</h1>
-<h2 style="color:grey">Next Song: After Dark <a href="afterdark.html"><span class="material-icons" style="color:black">
+<h3 style="color:#00bfb9">Next Song: After Dark <a href="afterdark.html"><span class="material-icons" style="color:black">
 skip_next
-</span></a></h2>
-<h2 style="color:grey"><a href="index.html"><span class="material-icons" style="color:black">
+</span></a></h3>
+<h3 style="color:#00bfb9"><a href="index.html"><span class="material-icons" style="color:black">
 skip_previous
-</span></a>Previous Song: Tsukiakari </h2>
+</span></a>Previous Song: Tsukiakari </h3>
 
 <div>
 <span class="tooltip">
@@ -787,6 +797,12 @@ Happiness is calling for you, your smiling face seems to overflow with joy.<br/>
 ラララ～</br>
 rarara~</br>
 La, la, la ~</br></br>
+<h3 style="color:#00bfb9">Next Song: After Dark <a href="afterdark.html"><span class="material-icons" style="color:black">
+skip_next
+</span></a></h3>
+<h3 style="color:#00bfb9"><a href="index.html"><span class="material-icons" style="color:black">
+skip_previous
+</span></a>Previous Song: Tsukiakari </h3>
 </div>
 </body>
 </html>
